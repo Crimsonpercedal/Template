@@ -1,0 +1,44 @@
+/* ===== NAVBAR OVERRIDE ===== */
+.navbar {
+    width: 100%;
+    max-width: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.4rem;
+    letter-spacing: 0.15em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9rem;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Mobile fix */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}

@@ -1,0 +1,145 @@
+/* ========== GLOBAL RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========== FULL SCREEN LAYOUT ========== */
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Remember this page doesn't scroll on purpose*/
+
+/* Main container fills the entire viewport */
+.login-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+/* ========== LEFT SIDE: FORM ========== */
+.login-form {
+    width: 40%;
+    padding: 70px 80px;
+    position: relative;
+    background-color: #ffffff;
+}
+
+/* Back arrow positioning */
+.back-arrow {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+}
+
+/* LOGIN heading (centered & larger) */
+.login-form h1 {
+    text-align: center;
+    font-size: 36px;
+    /* Font size from wireframe */
+    font-weight: 700;
+    /* Font weight means how bold e.g. semi bold, medium, regular*/
+    margin-bottom: 30px;
+    /* Closer to Username/Email input field */
+}
+
+/* Form labels */
+.login-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+/* Input fields */
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border-radius: 6px;
+    border: 1px solid #dddddd;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 22px;
+}
+
+/* Remember me section */
+.remember-wrapper {
+    margin-bottom: 36px;
+}
+
+.remember-wrapper label {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+/* Login button */
+.login-btn {
+    width: 100%;
+    height: 50px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #000000;
+}
+
+/* Forgot password link */
+.forgot-password {
+    display: block;
+    margin-top: 18px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    color: #2b6cff;
+    text-decoration: none;
+}
+
+/* Signup text */
+.signup-text {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.signup-text a {
+    color: #2b6cff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* ========== RIGHT SIDE: IMAGE ========== */
+.image-section {
+    width: 60%;
+    position: relative;
+
+    /* Paste your Freepik image URL here */
+    background-image: url(../assets/images/login-image.jpg);
+    background-size: cover;
+    background-position: center 70%;
+    /*this changes how the image is cropped*/
+}
+
+/* black overlay */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /*changed to 30% (0.3) cause 20% (0.2) was too light*/
+}
